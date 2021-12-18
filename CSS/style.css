@@ -1,0 +1,242 @@
+body{
+  margin: 0px;
+}
+html{
+  scroll-behavior: smooth;
+  /* scroll-behavior: auto; */
+}
+
+
+/* Navigation Bar  */
+#navbar::before {
+    content: "";
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+/* Navigation Bar : Logo  */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin: 0px 0px;
+    padding-top: 0px;
+}
+#logo {
+  margin: 0px 10px;
+}
+#logo img {
+  height: 55px;
+  margin: 3px 9px;
+  cursor: pointer;
+}
+/* Navigation Bar List Styling */
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.3rem;
+  /* margin: 0px 10px; */
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 5px 24px;
+  /* margin: 0px 10px; */
+  text-decoration: none;
+  border-radius: 13px;
+  transition: all .3s ease;
+  /* font-family: 'Dancing Script', cursive; */
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color:white;
+  box-shadow: 0 0 10px white;
+  margin: 0px 10px;
+}
+
+
+
+
+
+/* Home */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 483px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  background-image: url(/background.jpg);
+  height: 491px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+
+
+/* Service Section  */
+#services{
+  display: flex;
+  margin: 34px;
+}
+#services .box{
+  border: 2px solid black;
+  padding: 45px;
+  border-radius: 12px;
+  margin: 10px 12px;
+  background-color: rgb(199, 198, 198);
+}
+#services .box img{
+  height: 190px;
+  display: block;
+  margin: auto;
+}
+
+
+
+
+/* Client Section  */
+#Clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-item{
+  margin: 0px 34px;
+  padding: 34px;
+  cursor: pointer;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url('../Images/Logo/bg.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 349px;
+  z-index: -1;
+  opacity: 0.9;
+}
+#Clients img{
+  height: 150px;
+}
+
+
+
+
+/* Contact section */
+#contact::before{
+  content: "";
+  position: absolute;
+  /* background: url('../Images/Logo/bg1.jpg') no-repeat center center/cover; */
+  background-color: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 580px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  /* border-radius: 10px; */
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.4rem;
+}
+.form-group{
+  color: white;
+}
+.input{
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+}
+
+
+
+
+
+
+/* Footer section */
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px 50px;
+}
+
+
+
+
+
+
+/* Utility classes */
+.h-primary{
+  font-size: 2.8rem;
+  padding: 0px;
+  font-weight: 600;
+  /* margin: 10px 0px; */
+  /* font-family: 'Aladin', cursive; */
+}
+.h-secondary{
+  font-size: 1.8rem;
+  padding: 0px;
+}
+.btn{
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+  /* border: 3px solid black; */
+}
+.box-btn{
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: .2s ease;
+}
+.box-btn:hover{
+  background-color: white;
+  color: black;
+}
+.center{
+  text-align: center;
+}
